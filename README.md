@@ -1,2 +1,2 @@
-# Neural-Translator-English-to-Marathi
+# Neural Translator English to Marathi
 Machine translation refers to translating phrases across languages using deep learning and specifically with RNN (Recurrent Neural Nets). Most of these are complex system that is they are combined system of various algorithms. But, at its core, NMT uses sequence-to-sequence ( seq2seq ) RNN cells. Such models could be character level but word level models remain common. ✏🧾📚📰🖋🎤
