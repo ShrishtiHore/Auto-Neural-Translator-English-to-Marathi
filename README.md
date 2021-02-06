@@ -15,13 +15,17 @@ Machine translation refers to translating phrases across languages using deep le
 ![nmet](https://github.com/ShrishtiHore/Neural-Translator-English-to-Marathi/blob/main/nmt-model-fast.gif)
 
 **Step 1: Downloading Datset and Libraries**
+
 **(a) Importing the Libraries**
+
 Import Tensorflow and Keras. From Keras, import modules that build NN layers, preprocess data and construct LSTM models.
 
 **(b) Reading the Data**
+
 The given dataset contains more than 30k pairs of English-Marathi phrases.Just donwload the dataset and unzip it and read it using Pandas.
 
 **Step 2: Preparing input data for the Encoder**
+
 The Encoder model will be fed input data which are preprocessed English sentences. The preprocessing is done as follows:
 
 1.   Tokenizing the English sentences from eng_lines.
@@ -36,8 +40,9 @@ The decoder model will be fed the preprocessed Marathi lines. The preprocessing 
 *  Append <START> tag at the first position in each Marathi sentence.
 *  Append <END> tag at the last position in each Marathi sentence.
 
-**Step 4: Preparing Target Data for the Decoder (decoder_target_data)
-We take a copy of tokenized_mar_lines and modify it like this.**
+**Step 4: Preparing Target Data for the Decoder (decoder_target_data)**
+
+We take a copy of tokenized_mar_lines and modify it like this.
 
 1. We remove the <start> tag which we appended earlier. Hence, the word ( which is <start> in this case ) will be removed.
 2. Convert the padded_mar_lines ( ones which do not have <start> tag ) to one-hot vectors.
@@ -62,9 +67,11 @@ Working :
 5.   The Embeddings goes in LSTM cell ( which had the states ) to produce sequences.
 
 **Step 6: Train the Model**
+
 We train the model for a number of epochs with RMSprop optimizer and categorical crossentropy loss function.
 
 **Step 7: Defining Inference Models**
+
 We create inference models which help in predicting translations.
 
 * Encoder inference model : Takes the English sentence as input and outputs LSTM states ( h and c ).
@@ -72,6 +79,7 @@ We create inference models which help in predicting translations.
 * Decoder inference model : Takes in 2 inputs, one are the LSTM states ( Output of encoder model ), second are the Marathi input seqeunces ( ones not having the <start> tag ). It will output the translations of the English sentence which we fed to the encoder model and its state values.
 
 **Step 8: Making some translations**
+
 1.   First, we take a English sequence and predict the state values using enc_model.
 2.   We set the state values in the decoder's LSTM.
 3.   Then, we generate a sequence which contains the <start> element.
