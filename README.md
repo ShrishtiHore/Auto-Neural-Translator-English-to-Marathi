@@ -78,6 +78,14 @@ We create inference models which help in predicting translations.
 4.   We input this sequence in the dec_model.
 5.   We replace the <start> element with the element which was predicted by the dec_model and update the state values.
 6.   We carry out the above steps iteratively till we hit the <end> tag or the maximum sequence length.
+  
+**Result**
 
+![result](https://github.com/ShrishtiHore/Neural-Translator-English-to-Marathi/blob/main/res.PNG)
 
+**References**
 
+1. 
+2.
+3.
+4. 
