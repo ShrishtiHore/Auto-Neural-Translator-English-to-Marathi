@@ -85,7 +85,7 @@ We create inference models which help in predicting translations.
 
 **References**
 
-1. 
-2.
-3.
-4. 
+1. https://www.analyticsvidhya.com/blog/2019/01/neural-machine-translation-keras/
+2. https://medium.com/predict/creating-a-chatbot-from-scratch-using-keras-and-tensorflow-59e8fc76be79
+3. http://www.manythings.org/
+4. https://www.analyticsvidhya.com/blog/2020/01/3-important-nlp-libraries-indian-languages-python/
