@@ -12,6 +12,8 @@ Machine translation refers to translating phrases across languages using deep le
 
 **Dataset:** [Marathi and English Phrases Dataset](http://www.manythings.org/) 
 
+![nmet](https://github.com/ShrishtiHore/Neural-Translator-English-to-Marathi/blob/main/nmt-model-fast.gif)
+
 **Step 1: Downloading Datset and Libraries**
 **(a) Importing the Libraries**
 Import Tensorflow and Keras. From Keras, import modules that build NN layers, preprocess data and construct LSTM models.
